@@ -54,5 +54,9 @@ footer {
     text-align: center;
 }
 h2{
-    color: rgb(4, 67, 114)
+    color: rgb(4, 67, 114);
+    padding: 1px;
+    margin-top: 0;
+
+    
 }
