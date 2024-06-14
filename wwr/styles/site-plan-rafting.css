@@ -33,7 +33,7 @@
     --heading-font:'Cinzel', serif;
     --paragraph-font:'M PLUS Rounded 1c',sans-serif;
     
-    --nav-background-color: var(--accent2-color))
+    --nav-background-color: var(--accent2-color);
     --nav-link-color:var(--primary-color);
     --nav-hover-link-color:var(--accent1-color);
     --nav-hover-background-color:var(--accent2-color)
