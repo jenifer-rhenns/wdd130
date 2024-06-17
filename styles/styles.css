@@ -4,7 +4,7 @@
   
   .frank-ruhl-libre {
     font-family: "Frank Ruhl Libre", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
   }
   
@@ -30,7 +30,7 @@
 body{
     font-family: var(--paragraph-font);
     max-width: 960px;
-    padding: 20px;
+   
 }
 
 :root{
@@ -57,12 +57,12 @@ body{
 
 
 nav{
-    background-color: #0d628c;
+    background-color: #ffb703;
     padding: 20px;
 }
 
 nav a {
-    color: white;
+    color:#0d628c;
     padding: 10px;
     display: block;
     
@@ -87,7 +87,6 @@ p{
 
 main {
     max-width: 640px;
-    ;
 }
 
 
@@ -118,7 +117,7 @@ footer {
     text-align: center;
 }
 h2{
-    color: #0d628c;
+    color: black;
     padding: 1px;
     margin-top: 0;
 
@@ -131,7 +130,7 @@ h2{
     margin:1rem ;
     border: 1px dotted #0d628c ;
     padding: 1rem;
-    background-color: #ddf1f8;
+    background-color:#f9f5e9;
     color: #0d628c;
 }
 
