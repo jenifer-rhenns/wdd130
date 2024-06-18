@@ -3,17 +3,12 @@
 
   
   
-  .frank-ruhl-libre {
-    font-family: "Frank Ruhl Libre", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .m-plus-rounded-1c-medium {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+ 
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
     
   .cinzel {
     font-family: "Cinzel", serif;
@@ -36,7 +31,7 @@
     --Extra-color: #8ecae6;
 
     --heading-font:'Cinzel', serif;
-    --paragraph-font:'M PLUS Rounded 1c',sans-serif;
+    --paragraph-font:'rubik',sans-serif;
     
     --nav-background-color: var(--accent2-color);
     --nav-link-color:var(--primary-color);
@@ -84,3 +79,4 @@
     color:var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
   }
+  
