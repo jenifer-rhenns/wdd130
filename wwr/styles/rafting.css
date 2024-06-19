@@ -57,11 +57,13 @@
  }
 
  p{
-    padding: 25px;
+    padding: 20px 10px 20px 10px;
+    text-align: justify;
+
  }
 
  h2{
-    padding-left: 30px;
+    padding: 10px;
     color: #fb8500;
  }
 
@@ -76,7 +78,7 @@
 }
 
 .hero h1 {
-        position: absolute;
+    position: absolute;
     top: 10%;
     left: 0;
     width: 100%;
@@ -112,6 +114,7 @@ section{
 
 margin-left: 2px;
 }
+
 section img{
     width: 150px;
     border-color: #fb8500;
@@ -122,46 +125,45 @@ section img{
     
 }
 
-header {
+header nav{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--accent2-color);
     padding: 10px;
-    }
+}
     
-    header img{
+header img{
     width: 200px;
     padding: 0;
-    }
+}
 
     
-    header a {
+header nav a {
     text-decoration: none;
-    color:white;/* Cor do texto dos links */
+    color:white;
     background-color: #fb8500;
     padding: 10px 25px;
     margin-right: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    }
+}
     
-    header a:hover {
-    background-color: #0d628c; /* Cor de fundo ao passar o mouse */
-    }
+header nav a:hover {
+    background-color: #0d628c; 
+}
     
-    header a:last-child {
+nav a:last-child {
     margin-right: 0;
-    }
+}
 
-    .sociallinks img{
+.sociallinks img{
     width: 53px;
     padding: 3px;
-    
-    
 }
+
 .sociallinks{
     font-size: 0;
     float: right;
-    margin-right: 10px; /* Ajuste conforme necessário */
-    
+    margin-left: 1rem; /* Ajuste conforme necessário */
 }
