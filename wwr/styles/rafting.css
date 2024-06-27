@@ -63,8 +63,10 @@
  }
 
  h2{
-    padding: 10px;
+    padding-bottom: 20px;
     color: #fb8500;
+    text-align: center;
+    
  }
 
 .hero {
@@ -75,7 +77,15 @@
     display: block;
     width: 100%;
     height: auto;
+    border: none;
+    box-shadow: none;
 }
+
+.hero h2{
+    padding: 10px;
+    color: #fb8500;
+    text-align: left;
+ }
 
 .hero h1 {
     position: absolute;
@@ -101,48 +111,109 @@
 }
 
 .hero article img {
-    width: 200px;
+    max-width: 200px;
     float: right;
     margin: 0 10px 20px 20px;
     height: auto;
-    border: 1px solid #fb8500;
+    border: 1px solid #fffffe;
     padding: 0;
     
 }
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    text-align: justify;
+}
+
+.center-img {
+    grid-column: 2;
+    width: 100%;
+    height: auto;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 3;
+}
+
+.adventure {
+    text-align: center;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap: 5px; /* Espaçamento entre as figuras */
+}
+
+figure {
+    text-align: center;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #f5fafc;
+    padding: 1px;
+    box-shadow: 0 0 5px gray;
+}
+
+
+figcaption {
+    margin-top: 8px;
+}
+
 
 section{
-
-margin-left: 2px;
+   padding: 5px;
+   margin-top: 10px;
+   border: 1px solid rgb(229, 230, 233);
 }
 
-section img{
-    width: 150px;
-    border-color: #fb8500;
-    height: auto;
-    border: 1px solid #f5fafc;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    
+header{
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+    background-color: #fb8500;
+   
 }
 
-header nav{
+header .logo{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--accent2-color);
-    padding: 10px;
-}
-    
-header img{
-    width: 200px;
-    padding: 0;
 }
 
+header img{
+    width: 180px;
+    padding-left: 30px;
+    border: none;
+    box-shadow: none;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+}
     
+
 header nav a {
     text-decoration: none;
+    
     color:white;
-    background-color: #fb8500;
+    background-color: transparent;
     padding: 10px 25px;
     margin-right: 10px;
     border-radius: 5px;
@@ -157,13 +228,36 @@ nav a:last-child {
     margin-right: 0;
 }
 
-.sociallinks img{
-    width: 53px;
-    padding: 3px;
+footer {
+    background-color: transparent;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.sociallinks{
-    font-size: 0;
-    float: right;
-    margin-left: 1rem; /* Ajuste conforme necessário */
+.sociallinks {
+    display: flex;
+    gap: 10px;
+}
+
+.sociallinks a {
+    display: inline-block;
+}
+
+.sociallinks img {
+    width: 50px;
+    height: auto;
+    padding: 3px;
+    border: none;
+    box-shadow: none;
+}
+
+body, .container {
+    width: 100%; /* Largura do contêiner principal */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 0; /* Espaçamento interno do contêiner */
+    background-color: transparent /* Cor de fundo do contêiner */
+    
 }

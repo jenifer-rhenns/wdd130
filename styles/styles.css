@@ -9,7 +9,7 @@
     
   .cinzel {
     font-family: "Cinzel", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
   }
   
@@ -20,14 +20,20 @@
     box-sizing: border-box;
 }
 
+
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 body{
     font-family: var(--paragraph-font);
-    max-width: 960px;
+  
    
 }
 
 :root{
-    --primary-color:#0d628c;
+    --primary-color: #0d628c;
     --secondary-color: #fb8500;
     --accent1-color: #219ebc;
     --accent2-color: #ffb703;
@@ -44,23 +50,34 @@ body{
 
   h1,h2,h3,h4,h5,h6{
     font-family: var(--heading-font);
-    color:var(--primary-color);
+    color: var(--primary-color);
     padding-left: 2rem;
   }
 
-
+h1{
+    border-bottom: 1px outset  #0d628c;
+    padding: 1rem;
+    font-size: 30px;
+ 
+}
 nav{
-    background-color: #ffb703;
-    padding: 20px;
+    background-color: #219ebc;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color:#0d628c;
-    padding: 10px;
     display: block;
-    
+    padding: 0.5rem;
+    text-decoration: none;
+    font-family: 'cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff; 
 
-}
+} 
 
 
 main img{
@@ -76,17 +93,27 @@ main img{
 p{
     margin: 1rem;
     
+    
 }
 
-main {
-    max-width: 640px;
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 
 aside{
-    width: 25rem;
+    width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 
 }
 
@@ -94,41 +121,41 @@ aside{
 aside img {
     width: 200px;
     height: auto;
-    padding: 1px;
-    box-shadow: 0 0 20px rgb(124, 127, 133);
+    padding: 2px;
+    border: 1px solid #219ebc;
+    
+    
 }
 
 aside h2 {
     position: absolute;
-    top: 25px;
-    left : 150px;
+    top: 30px;
+    left : 80px;
+    color: #ffffff;
+    
 }
 
+
 footer {
-    margin-top: 15px;
+    color:#0d628c ;
+    margin-top: 25px;
     border-top: 2px outset #0d628c;
     text-align: center;
 }
 
-h2{
-    color: black;
-    padding: 1px;
-    margin-top: 0;
-
-    
-}
 
 /* Class Selectors */
 
 .box {
     margin:1rem ;
-    border: 1px dotted #0d628c ;
-    padding: 1rem;
-    background-color:#f9f5e9;
+    border: 1px solid #0d628c ;
+    padding: 1rem 0 0 0;
+    background-color:#f7fcff;
     color: #0d628c;
 }
 
 .indent {
-    padding-left: 2rem;
+   
+    padding: 2rem;
 
 }
