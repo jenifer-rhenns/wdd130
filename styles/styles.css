@@ -61,7 +61,7 @@ h1{
  
 }
 nav{
-    background-color: #0d628c;
+    background-color: var(--primary-color);
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;

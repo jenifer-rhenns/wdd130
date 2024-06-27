@@ -124,7 +124,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
-    text-align: justify;
+    text-align: right;
 }
 
 .center-img {
@@ -231,12 +231,14 @@ nav a:last-child {
 
 footer {
     background-color: transparent;
-    margin-top: 3rem;
     text-align: center;
+    align-content: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid var(--accent2-color);
+    color:#0d628c ;
+    margin-top: 35px;
+    padding-top: 10px;
+    border-top: 2px outset #0d628c;
 }
 
 .sociallinks {
