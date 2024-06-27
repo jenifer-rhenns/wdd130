@@ -64,7 +64,7 @@
 
  h2{
     padding-bottom: 20px;
-    color: #fb8500;
+    color:var(--primary-color);
     text-align: center;
     
  }
@@ -184,7 +184,7 @@ header{
 	grid-template-columns: auto 1fr;
 	align-items: center;
 	border-bottom: 1px solid #ccc;
-    background-color: #fb8500;
+    background-color: var(--primary-color);
    
 }
 
@@ -211,8 +211,9 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    
-    color:white;
+    color: white;
+    font-family: var(--heading-font);
+    font-weight: bold;
     background-color: transparent;
     padding: 10px 25px;
     margin-right: 10px;
@@ -221,7 +222,7 @@ header nav a {
 }
     
 header nav a:hover {
-    background-color: #0d628c; 
+    background-color: var(--secondary-color); 
 }
     
 nav a:last-child {
@@ -230,11 +231,12 @@ nav a:last-child {
 
 footer {
     background-color: transparent;
-    padding: 3rem;
+    margin-top: 3rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid var(--accent2-color);
 }
 
 .sociallinks {

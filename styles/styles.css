@@ -61,7 +61,7 @@ h1{
  
 }
 nav{
-    background-color: #219ebc;
+    background-color: #0d628c;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -131,7 +131,7 @@ aside h2 {
     position: absolute;
     top: 30px;
     left : 80px;
-    color: #ffffff;
+    color: #0d628c;
     
 }
 
