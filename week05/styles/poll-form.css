@@ -96,15 +96,6 @@ button:hover {
     background-color: rgb(40, 152, 40);
 }
 
-footer{
-    margin: 1rem auto 0;
-    width: 650px;
-    text-align: center;
-    font-size: 0.8em;
-    color: rgb(135, 133, 133);
-    border-top: 1px solid rgb(135, 133, 133);
-}
-
 .form-item{
     display: grid;
     align-items: center;

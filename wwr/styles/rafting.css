@@ -173,7 +173,7 @@ figcaption {
 
 
 section{
-   padding: 5px;
+   padding: 10px;
    margin-top: 10px;
    border: 1px solid rgb(229, 230, 233);
 }
@@ -259,11 +259,166 @@ footer {
 }
 
 body, .container {
-    width: 100%; /* Largura do contêiner principal */
-    margin: 0 auto; /* Centraliza o contêiner na página */
-    padding: 0; /* Espaçamento interno do contêiner */
-    background-color: transparent /* Cor de fundo do contêiner */
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0; 
+    background-color: transparent 
     
 }
 
 /* 27/06/2024 */
+
+.contact {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    max-width: auto; /* ajusta conforme necessário */
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border: 1px solid rgb(229, 230, 233);
+}
+
+.contact h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    background-color: var(--accent2-color); 
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding: 1rem 0; 
+    text-align: center;
+}
+
+.contact1 {
+    display: flex;
+    flex-direction:column
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+.info, .map {
+    flex: 1;
+    padding: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.employee {
+    text-align: center;
+  }
+
+
+
+.image-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 5px; /* Espaçamento entre as figuras */
+}
+
+/*formulario*/
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    display: grid;
+    color: #fff;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(249, 246, 246);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--accent2-color);
+    font-size: 1.2em;
+}
+
+label, input, button, select, textarea {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+}
+
+label {
+    text-align: justify;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--accent2-color);
+    color: black;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-item.question {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 60px;
+}
+
+.question-label p {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+
+
