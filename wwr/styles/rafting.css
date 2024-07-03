@@ -24,6 +24,10 @@
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0; 
+    background-color: transparent
   }
 
   :root{
@@ -42,14 +46,16 @@
     --nav-hover-background-color:var(--accent2-color)
   }
 
-  h1,h2,h3,h4,h5,h6{
+  h3,h4,h5,h6{
     font-family: var(--heading-font);
-    color:var(--primary-color)
+    color:var(--primary-color);
   }
 
 
  h1{
     position: absolute;
+    font-family: var(--heading-font);
+    color:var(--primary-color);
  }
 
  article{
@@ -66,6 +72,8 @@
     padding-bottom: 20px;
     color:var(--primary-color);
     text-align: center;
+    font-family: var(--heading-font);
+    color:var(--primary-color);
     
  }
 
@@ -258,7 +266,7 @@ footer {
     box-shadow: none;
 }
 
-body, .container {
+.container {
     width: 100%; 
     margin: 0 auto; 
     padding: 0; 
@@ -292,8 +300,8 @@ body, .container {
 
 .contact1 {
     display: flex;
-    flex-direction:column;
-    gap: 20px; 
+    flex-direction: row; /* Alinha os itens em linha */
+    gap: 20px; /* Espaço entre as colunas */
 }
 
 .info, .map {
@@ -301,7 +309,7 @@ body, .container {
     padding: 20px;
 }
 
-.map iframe {
+.map-frame {
     width: 100%;
     height: 100%;
     border: 0;
@@ -346,20 +354,21 @@ legend {
     font-size: 1.2em;
 }
 
-label, input, button, select, textarea {
+input, select, textarea {
     font-family: var(--paragraph-font);
     font-style: italic;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
 label {
     text-align: justify;
     padding-right: 1rem;
+    font-family: var(--paragraph-font);
+    font-style: italic;
 }
 
-input, select, textarea {
-    padding: 0.5rem;
-    font-size: 1rem;
-}
+
 
 input[type="checkbox"] {
     width: 22px;
@@ -375,6 +384,10 @@ button {
     border-radius: 0.75rem;
     padding: 1rem;
     font-size: 1.2rem;
+    font-family: var(--paragraph-font);
+    font-style: italic;
+    
+    
 }
 
 button:hover {
