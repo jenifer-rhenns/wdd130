@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    color: white;
+    background-color: azure;
+    
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 3rem;
+    font-size: 1.5em;
+    color: rgb(10, 43, 93);
+    text-align: center;
+
+}
+
+p{
+  text-align: center;  
+  padding: 10px;
+  width: 50%;
+  background-color: rgba(234, 228, 228, 0.8); /* Fundo com transparência */
+  color: black;
+  margin: 0 auto;
+}
+
+form{
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: rgb(17, 61, 126);
+    display: grid;
+
+}
+
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(249, 246, 246);
+    padding: 1rem;
+
+}
+
+
+legend{
+    padding: 0.5rem;
+    color: yellow;
+    font-size: 1.2em;
+
+}
+label, input, button, select, textarea{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+label{
+    text-align: center;
+    padding-right: 1rem;
+    margin-top: 10px;
+}
+
+input, select, textarea{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    
+}
+
+button{
+    margin: 1rem;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 1rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+
+}
+
+button:hover {
+    background-color: rgb(40, 152, 40);
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+
