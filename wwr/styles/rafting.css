@@ -101,10 +101,10 @@
     left: 0;
     width: 100%;
     background-color: rgba(20, 20, 20, 0.5); /* Fundo com transparência */
-    color: white; /* Cor do texto branco */
+    color: white; 
     margin: 0;
-    padding: 10px 0; /* Ajuste o padding conforme necessário */
-    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; 
+    text-align: center; 
 }
 
 .hero article {
@@ -157,7 +157,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
-    gap: 5px; /* Espaçamento entre as figuras */
+    gap: 5px; 
 }
 
 figure {
@@ -230,7 +230,8 @@ header nav a {
 }
     
 header nav a:hover {
-    background-color: var(--secondary-color); 
+    background-color: var(--primary-color);
+    color: var(--accent2-color); 
 }
     
 nav a:last-child {
@@ -247,6 +248,29 @@ footer {
     margin-top: 35px;
     padding-top: 10px;
     border-top: 2px outset #0d628c;
+    flex-wrap: wrap;
+}
+
+footer p {
+    flex-basis: 50%;
+}
+
+.center-link {
+    flex-basis: 25%;
+    text-align: center;
+    margin: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+.center-link a {
+    background-color: var(--Extra-color); 
+    color: black; 
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px; 
+    border-radius: 10px; 
+    margin-block-end: 10px;
 }
 
 .sociallinks {
@@ -265,6 +289,7 @@ footer {
     border: none;
     box-shadow: none;
 }
+
 
 .container {
     width: 100%; 
@@ -300,8 +325,8 @@ footer {
 
 .contact1 {
     display: flex;
-    flex-direction: row; /* Alinha os itens em linha */
-    gap: 20px; /* Espaço entre as colunas */
+    flex-direction: row;
+    gap: 20px; 
 }
 
 .info, .map {
@@ -431,6 +456,207 @@ button:hover {
     margin-bottom: 5px;
 }
 
+.top {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: none;
+    padding: 0;
+    border: 0;
+}
+
+.top h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    background-color: var(--accent2-color); 
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding: 20px; 
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.top img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 0;
+    margin: 0;
+
+    
+}
+.trips {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border: 1px solid rgb(229, 230, 233);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+
+.trips h2 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
 
 
+.trips .trip-content {
+    display: flex;
+    gap: 20px;
+}
+
+.trips .trip-images {
+    flex: 1; /* Ocupa 1/3 do espaço */
+    display: flex;
+    flex-direction: column;
+    gap: 1px; 
+}
+
+.trips .trip-images img {
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: auto;
+    border-radius: 2px;
+    box-shadow: none;
+   
+}
+
+.trips .text {
+    flex: 2; /* Ocupa 2/3 do espaço */
+}
+
+.trips .text h3 {
+    margin-top: 20px;
+    
+}
+
+.trips .text p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.trips .text ul {
+    margin: 20px 0 20px 0; 
+    padding-left: 20px; 
+}
+
+.trips .text ul li {
+    margin-bottom: 10px; 
+}
+
+.trips .bottom-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 1px; 
+    border-radius: 0;
+    display: block;
+    box-shadow: none;
+    border: none;
+}
+
+.trips-inverted .trip-content {
+    flex-direction: row-reverse; /* Inverte a ordem dos elementos */
+}
+
+.trips-inverted .text h3{
+    padding-left: 15px; 
+}
+
+.trips-inverted .text p {
+    padding-left: 25px;
+}
+.trips-inverted .text ul{
+    padding-left: 35px;
+}
+
+/* Action button */
+.action-button {
+    text-align: center; 
+    margin: 30px 0; 
+}
+
+.action-button .btn {
+    
+    background-color: var(--accent2-color);
+    color: var(--primary-color); 
+    padding: 25px 30px; 
+    font-size: larger;
+    font-style:oblique;
+    font-weight: bolder;
+    text-decoration: none; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease; 
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.action-button .btn:hover {
+    background-color: var(--primary-color); 
+    color: #ffb703;
+}
+
+.trip-table {
+    width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 20px; 
+    border: 1px solid #e7e4e4; 
+    padding: 20px; 
+    background-color: transparent;
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.centered-table {
+    width: 100%; 
+    border-collapse: collapse; /* Colapso das bordas da tabela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+}
+
+.centered-table th, .centered-table td {
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: center; /* Centraliza o texto */
+    border: 1px solid rgb(241, 237, 136); /* Cor da borda das células */
+    
+}
+
+.centered-table th {
+    background-color: var(--Extra-color); /* Cor de fundo do cabeçalho */
+}
+
+.centered-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para a primeira coluna (Trip Name) */
+.centered-table td:first-child {
+    background-color: #f1e5c1; /* Cor de fundo amarela */
+    font-weight: bold; 
+}
+
+
+.centered-table .last-row {
+    background-color: #fff;
+    text-align: left;
+    font-style: italic;
+    padding: 10px; 
+}
+
+.centered-table .free-nights {
+    text-align: left;
+    background-color: #f2f2f2;
+    font-style: italic;
+    font-size: 12px;
+    padding: 10px;
+}
 
