@@ -56,6 +56,7 @@
     position: absolute;
     font-family: var(--heading-font);
     color:var(--primary-color);
+    
  }
 
  article{
@@ -621,7 +622,7 @@ button:hover {
 .centered-table {
     width: 100%; 
     border-collapse: collapse; /* Colapso das bordas da tabela */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .centered-table th, .centered-table td {
@@ -661,3 +662,298 @@ button:hover {
     padding: 10px;
 }
 
+.home {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: none;
+    padding: 0;
+    position: relative;
+    padding: 0;
+    
+    
+}
+
+
+.home h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    background-color: var(--accent2-color); 
+    color: var(--primary-color);
+    margin-bottom: 0;
+    padding: 20px; 
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.home img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 0;
+    
+   
+}
+
+.home h2 {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.5); /* Fundo com transparência */
+    color: var(--accent2-color); 
+    margin:0;
+    padding: 10px 0; 
+    padding-right: 20px;
+    text-align:right; 
+}
+
+.rafting {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info1 {
+    flex: 1 1 50%;
+    max-width: 50%;
+    text-align: justify;
+}
+
+.info1 h3 {
+    text-align: center;
+}
+
+.icons {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.icon-item {
+    display: flex;
+    align-items: start;
+    max-width: 100%;
+}
+
+.icon-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    box-shadow: none;
+}
+
+.icon-item div {
+    max-width: calc(100% - 60px);
+}
+
+
+.newsletter {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent ;
+    width: 80%;
+    color: #0d628c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dbd9d9;
+    
+}
+
+.newsletter label {
+    margin: 0;
+}
+
+.newsletter input {
+    padding: 4px;
+    margin: 5px 0;
+    max-width: 600px;
+    flex: 1;
+}
+
+.newsletter button {
+    width: 50%;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+
+
+@media (max-width: 768px) {
+    .rafting {
+        flex-direction: column;
+    }
+    
+    .info, .icons {
+        max-width: 100%;
+    }
+    
+    .newsletter form {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.call-trip {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: none;
+    padding: 0;
+    position: relative;
+    padding: 0;
+    
+    
+}
+
+
+.call-trip img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 0;
+    
+   
+}
+
+.call-trip h2 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.5); /* Fundo com transparência */
+    color: var(--accent2-color); 
+    margin:0;
+    padding: 20px 0; 
+    padding-right: 20px;
+    text-align:right; 
+}
+
+.call-trip-button {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;  /* Ajuste este valor para mover o botão para cima ou para baixo */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 20px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: none;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.call-trip-button:hover {
+    background-color: white;  /* Altere para a cor de hover que você preferir */
+    color: var(--accent2-color);
+}
+
+.company {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px; /* Ajuste o valor do gap conforme necessário */
+}
+
+.company p {
+    font-size: larger;
+    padding: 60px;
+    padding-bottom: 10px;
+}
+
+.company .name {
+    font-size: smaller;
+    padding: 0;
+    margin: 0;
+    display: block; 
+    text-align: right;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.company h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding: 40px;
+}
+
+.company div:first-child {
+    grid-column: span 1;
+}
+
+.company div:last-child {
+    grid-column: span 1;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px; /* Ajuste o valor do gap entre as figuras conforme necessário */
+}
+
+.company figure {
+    margin: 0; /* Remove as margens padrão das figuras */
+    position: relative;
+    width: 100%;
+  
+}
+
+.company figure img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.company figcaption {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+}
