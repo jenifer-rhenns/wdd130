@@ -949,7 +949,7 @@ button:hover {
 
 .company figcaption {
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     width: 100%;
     background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
     color: var(--accent2-color);
